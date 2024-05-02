@@ -13,7 +13,8 @@ class User(AbstractUser):
         verbose_name = 'Номер телефона'
     )
     age = models.IntegerField(
-        verbose_name = 'Возраст'
+        verbose_name = 'Возраст',
+        null = True
     )
     created_at = models.DateTimeField(
         auto_now_add = True,
