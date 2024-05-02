@@ -12,4 +12,3 @@ class UserViewSet(GenericViewSet,
                    mixins.DestroyModelMixin):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    
